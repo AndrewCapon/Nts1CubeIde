@@ -250,35 +250,27 @@ class Osc {
   }
 
 
-  inline void NoteOn(uint8_t note, uint8_t velo) {
+  inline void NoteOn(__attribute__ ((unused)) uint8_t note, __attribute__ ((unused)) uint8_t velo) {
     static uint32_t u = 0;
     float f = -123.456f/note*(velo +1);
     int d = -10;
 
     DebugOutParams("NoteOn1 Eclipse2 - %u, %f, %d, '%s'\r\n", u++, f, d, "Wheee");
-
-    (uint8_t)note;
-    (uint8_t)velo;
   }
 
-  inline void NoteOff(uint8_t note) {
-    (uint8_t)note;
+  inline void NoteOff(__attribute__ ((unused)) uint8_t note) {
   }
 
   inline void AllNoteOff() {
   }
 
-  inline void PitchBend(uint8_t bend) {
-    (uint8_t)bend;
+  inline void PitchBend(__attribute__ ((unused)) uint8_t bend) {
   }
 
-  inline void ChannelPressure(uint8_t press) {
-    (uint8_t)press;
+  inline void ChannelPressure(__attribute__ ((unused)) uint8_t press) {
   }
 
-  inline void AfterTouch(uint8_t note, uint8_t press) {
-    (uint8_t)note;
-    (uint8_t)press;
+  inline void AfterTouch(__attribute__ ((unused)) uint8_t note, __attribute__ ((unused)) uint8_t press) {
   }
 
   
